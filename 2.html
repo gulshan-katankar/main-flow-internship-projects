@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Webpage</title>
+    <style>
+        /* Resetting default margin and padding */
+        body, h1, p {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f9f9f9;
+            color: #333;
+            margin: 0;
+        }
+
+        header {
+            background-color: #4285f4;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #65a6f9;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #ffeb3b; /* change color on hover */
+        }
+
+        main {
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        footer {
+            background-color: #4285f4;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        /* Button styles */
+        .button {
+            display: inline-block;
+            background-color: #ffeb3b;
+            color: #333;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+
+        .button:hover {
+            background-color: #fbc02d; /* change color on hover */
+        }
+
+        /* Media Queries */
+        @media only screen and (max-width: 600px) {
+            header, nav, main, footer {
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Responsive Webpage</h1>
+    </header>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+    </nav>
+    <main>
+        <h2>Welcome to My Responsive Webpage</h2>
+        <p>This is a basic example of a webpage created using HTML and CSS, now made responsive to ensure optimal display and usability across various devices and screen sizes.</p>
+        <p>You can modify and style it according to your needs.</p>
+        <a href="#" class="button">Learn More</a>
+    </main>
+    <footer>
+        <p>&copy; 2024 Responsive Webpage. All rights reserved.</p>
+    </footer>
+</body>
+</html>
