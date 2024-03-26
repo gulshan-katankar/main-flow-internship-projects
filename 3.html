@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Webpage</title>
+    <style>
+        /* CSS styles remain the same */
+        /* Add your existing CSS styles here */
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Interactive Webpage</h1>
+    </header>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+    </nav>
+    <main>
+        <h2>Welcome to My Interactive Webpage</h2>
+        <p>This is a basic example of a webpage created using HTML, CSS, and JavaScript.</p>
+        <p>Try submitting the form below:</p>
+        <form id="myForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <button type="submit">Submit</button>
+        </form>
+        <div id="output"></div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Interactive Webpage. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // JavaScript code for form validation and dynamic content update
+        document.getElementById("myForm").addEventListener("submit", function(event) {
+            event.preventDefault(); // Prevent form submission
+
+            // Get input value
+            var name = document.getElementById("name").value;
+
+            // Validate input
+            if (name.trim() === "") {
+                alert("Please enter your name.");
+                return;
+            }
+
+            // Display output
+            document.getElementById("output").innerHTML = "<p>Hello, " + name + "! Thank you for submitting the form.</p>";
+        });
+    </script>
+</body>
+</html>
